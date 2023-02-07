@@ -1,0 +1,31 @@
+﻿@model List<ScaffoldDotNet7.Models.Movie>
+
+
+
+<h1>WatchLists</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Year Of Build</th>
+            <th>Genre</th>
+            <th> </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.Name</td>
+                <td>@movie.Year</td>
+                <td>@movie.Genre</td>
+                <td><a href="WatchList/View/@movie.Id">View</a></td>
+            </tr>
+
+        }
+    </tbody>
+</table>

@@ -1,0 +1,30 @@
+﻿@model ScaffoldDotNet7.Models.AddMovieViewModel
+
+@{
+    /*inside of to form <> we will specify what form has to do After that we Push the button!*/
+}
+<h1>Add a Movie To Your WatchList</h1>
+<form action="Add" method="post" class="mt-5">
+
+
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+
+    </div>
+
+    <div class="form-group">
+        <label for="">YearOfBuild</label>
+        <input type="number" class="form-control" asp-for="Year">
+
+    </div>
+
+    <div class="form-group">
+        <label for="">Genre</label>
+        <input type="text" class="form-control" asp-for="Genre">
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
